@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="https://cdn3.iconfinder.com/data/icons/files-51/64/HTML-File-512.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        table,th,tr,td{
+                        /* border: 1px solid;
+                        border-collapse: collapse; */
+                        padding: 3px;
+                      }
+        body
+        {
+            /* overflow: hidden; */
+            /* margin-left: 36rem;
+            margin-right: 36rem; */
+            background: #373B44;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        }
+
+        .main
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            margin: 30px 0 !important;
+            /* position: absolute; */
+            top: 0; left: 0; right: 0; bottom: 0;
+            margin: auto;
+        }
+
+        table th
+        {
+            font-size: 1.8rem;
+            /* color: beige; */
+        }
+
+        .t1
+        {
+            color: goldenrod;
+            padding: 12px 0 !important;
+        }
+
+        table td
+        {
+            font-size: 1.2rem;
+            color: azure;
+        }
+        .tp
+        {
+            padding-bottom: 10px !important;
+        }
+        .btn
+        {
+            border-radius: 20px !important;
+        }
+        .input{
+                width: 80%; 
+                height: 1.5rem;           
+                border-radius: 5px;
+                border: none;
+                
+            }
+        .input:focus
+        {
+            filter: drop-shadow(0 0 10px gray);
+        }
+        .submit
+        { 
+            width: 50%; 
+            /* height: 2rem;  */
+            font-size: large; 
+            color: rgb(247, 250, 252); 
+            /* background-color: orange; */
+            background: linear-gradient(to right, #4286f4, #373B44);
+            border-radius: 10px;
+            padding: 6px;
+            border: none;
+        }
+
+        form table
+        {
+            padding: 20px 60px;
+        }
+        form
+        {
+            border: 1px solid goldenrod;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+            <form>
+                <table>
+                    <tr>
+                        <th class="t1" colspan="2"  >Personal Details</th>
+                    </tr>
+
+                    <tr>
+                        <td>Name: </td>
+                        <td>
+                            <input class="input" id="name" type="text" width="100">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Password: </td>
+                        <td>
+                            <label for="pass"></label><input id="pass"class="input" type="password">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Email id: </td>
+                        <td>
+                        <label for="eid"></label> <input id="eid" class="input" type="email" required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Gender: </td>
+                        <td>
+                            <input type="radio" name="gen">Male
+                            <input type="radio" name="gen">Female
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Contact: </td>
+                        <td>
+                        <label for="cont"></label>  <input id="cont"class="input" type="text">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th class="t1"  colspan="2">Educational Qualification</th>
+                    </tr>
+
+                    <tr>
+                        <td>Degree: </td>
+                        <td>
+                    
+                            <select class="input">
+                                <option value="select">--Select Group--</option>
+                                <option value="MSc">MSc</option>
+                                <option value="BSc">Bsc</option>
+                                <option value="MTech">MTech</option>
+                                <option value="BTech">BTech</option>                
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Engineering: </td>
+                        <td>
+                            <input class='input' list="eng">
+                            <datalist id="eng">
+                                <!-- <option value="select" selected>--Select Group--</option> -->
+                                <option value="Computer Science"></option>
+                                <option value="Mechanical"></option>
+                                <option value="Electrical"></option>
+                                <option value="Aeronautical"></option>
+                                <option value="EEC"></option>                        
+                            </datalist>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Hobbies: </td>
+                        <td>
+                            <input type="checkbox" name="hobby">Playing Chess
+                            <input type="checkbox" name="hobby">Reading Books
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <th class="t1" colspan="2">Address</th>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2">
+                            <textarea class='addr' name="add" id="" cols="50" rows="5"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Attach Resume: </td>
+                        <td>
+                            <input type="file" name="res" id="">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <th colspan="2">
+                        <div class="input-icons">
+                            <!-- <i class="fa fa-arrow-circle-o-right fa-lg"></i>  -->
+                            <input class="submit" type="submit">
+                            <!-- <i class="fa fa-user icon"></i> -->
+                            
+                            </div> 
+                        </th>
+                        
+                    </tr>
+                </table>
+            </form>
+        </div>
+</body>
+</html>
